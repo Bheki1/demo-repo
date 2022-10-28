@@ -1,15 +1,9 @@
 pipeline{
         agent any
         stages{
-            stage('Make Directory'){
+            stage('Clone'){
                 steps{
-                    sh "mkdir ~/jenkins-tutorial-test"
-                }
-            }
-            stage('Make Files'){
-                steps{
-                    sh "touch ~/jenkins-tutorial-test/file1 ~/jenkins-tutorial-test/file2"
+                    sh "git clone t"
                 }
             }
         }
-}
